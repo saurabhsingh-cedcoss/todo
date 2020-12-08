@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  .task {
+    width: 83vw;
+    padding: 10px;
+    height: 5vw;
+    font-size: 3vw;
+    border: 1px solid black;
+    margin-bottom: 3px;
+    background-color: rgba(236, 214, 214, 0.473);
+  }
+
+  .display {
+    width: 53vw;
+    padding: 10px;
+    background-color: rgb(255, 253, 253);
+    margin: auto;
+    font-size: 2vw;
+  }
+
+ 
+  .del {
+    float: right;
+    margin: 0 5px;
+    height: 6vh;
+    width: 6vw;
+    font-size: 3vh;
+  }
+  .check {
+    margin: 0 5px;
+    float: left;
+  }
+  .edit {
+    float: right;
+    margin: 0 5px;
+    height: 6vh;
+    width: 5vw;
+    font-size: 3vh;
+  }
+  .inp1 {
+    float: right;
+    display: none;
+    height: 3vw;
+    font-size: 2vw;
+  }
+  .check{
+      height: 40px;
+      width: 30px;
+      font-size: 70px;
+  }
+  label{
+      margin-left: 8px;
+      font-size: 30px;
+  }
