@@ -6,9 +6,13 @@ $(document).ready(function () {
     $("#btn1").click(function () {
         var a = $("#inp").val();
         console.log(a);
-        if (a != "") {
+        if (inp.value.length == 0) {
+            alert("please enter some text");
+        }
+        else {
             var x = $("<div class='task'></div>");
             var txt = $("<label></label>").text(a);
+            $("#inp").val(" ");
             var edit = $("<button class='btn btn-success edit'></button>")
                 .text("edit")
                 .click(function () {
@@ -56,7 +60,7 @@ $(document).ready(function () {
             x.append(txt, edit, inpbox, del);
 
             $(".incomp").append(x);
-            $("#inp").val(" ");
+           
         }
     });
 });

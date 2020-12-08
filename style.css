@@ -1,25 +1,55 @@
 * {
     box-sizing: border-box;
   }
+  body{
+      /* background-image: linear-gradient(120deg,rgb(0, 0, 0),rgb(40, 7, 41)); */
+      min-height: 100vh;
+      background-image: url('1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.74);
+      background-repeat: no-repeat;
+  }
   .task {
     width: 83vw;
     padding: 10px;
     height: 5vw;
     font-size: 3vw;
-    border: 1px solid black;
+    border-top: 3px solid red;
+    /* border: 1px solid black; */
     margin-bottom: 3px;
-    background-color: rgba(236, 214, 214, 0.473);
+    color: rgb(255, 255, 255);
+    background: none;
+    /* background-color: white; */
+    border-radius: 20px;
+    margin-bottom: 30px;
   }
 
   .display {
     width: 53vw;
     padding: 10px;
-    background-color: rgb(255, 253, 253);
+    color: white;
     margin: auto;
     font-size: 2vw;
   }
-
+#inp{
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.inp1{
+    color: black;
+}
  
+.incomp,.comp,.display1{
+    color: white;
+    font-size: 60px;
+}
+.incomp{
+    border-bottom: 2px solid white;
+}
+
   .del {
     float: right;
     margin: 0 5px;
@@ -51,5 +81,58 @@
   }
   label{
       margin-left: 8px;
-      font-size: 30px;
+      font-size: 35px;
   }
+  h2{
+      color: rgb(10, 245, 69);
+      font-size: 40px;
+  }
+ .display1{
+     color: violet;
+     font-size: 70px;
+ }
+ @media(max-width:400px) and (min-width:200px){
+     .display{
+         height: 10vh;
+         width: 94vw;
+         font-size: 3vh;
+         margin-bottom: 70px;
+     }
+     .display1{
+         font-size: 65px;
+     }
+     h2{
+         font-size: 20px;
+     }
+     #inp{
+         margin-bottom: 15px;
+     }
+     .task{
+         height: 5vh;
+         background: none;
+         color: white;
+         border: none;
+         border-top: 2px solid violet;
+     }
+     .check{
+         height: 2vh;
+     }
+     label{
+         font-size: 3vh;
+     }
+     .del,.edit{
+         width: 10vh;
+         height: 4vh;
+         font-size: 2vh;
+         
+     }
+     .task{
+         margin-bottom: 45px;
+     }
+     .inp1{
+         width: 10vh;
+         height: 3vh;
+         font-size: 2vh;
+         color: black;
+     }
+ }
